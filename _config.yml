@@ -1,0 +1,28 @@
+# Site settings
+title:            "Demo"
+description:      ""
+url:              ""
+google_analytics: false
+
+# Where things are
+destination:      ./_site
+
+# Handling Reading
+exclude:          ["design", "templates", "Gemfile", "Gemfile.lock", "README.md", ".gitignore"]
+
+# Assets
+sass:
+    style:        compressed
+
+# Conversion
+markdown:         kramdown
+
+# Outputting
+permalink:        /:categories/:year/:month/:title/
+
+excerpt_separator: <!--more-->
+
+# Compensating for gh-pages project site
+# https://github.com/jekyll/jekyll/issues/332
+# baseurl:          /forwardcitizen
+baseurl:          "/demo"

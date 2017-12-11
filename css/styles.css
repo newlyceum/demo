@@ -1,0 +1,40 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -webkit-text-size-adjust: none;
+    zoom: 1;
+}
+
+body {
+    -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+    background: linear-gradient(270deg, #ff0000, #ff8800, #ffff00, #00ff00, #0000ff, #8888ff, #8800ff);
+    background-size: 1400% 1400%;
+    animation: bg 15s infinite;
+}
+.container {
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+@keyframes bg {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+h1 {
+    color: white;
+    margin-bottom: 1em;
+}
+.container p {
+    color: white;
+    display: none;
+    font-size: 2em;
+}
